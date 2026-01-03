@@ -1,5 +1,7 @@
 from fastapi import FastAPI
-
+# Version: $(date +%s) - forces fresh build
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
 app = FastAPI()
 
 @app.get("/")
